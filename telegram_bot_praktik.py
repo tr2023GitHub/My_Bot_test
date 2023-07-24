@@ -23,7 +23,7 @@ def start(message):
 
 @bot.message_handler(commands=['nextstep'])
 def nextstep_run(message):
-    a = bot.send_message(message.chat.id, 'Введите текст следующих шагов теста:', parse_mode='html')
+    a = bot.send_message(message.chat.id, 'Введите текст следующих моих шагов теста:', parse_mode='html')
     bot.register_next_step_handler(a, returning)
 
 
