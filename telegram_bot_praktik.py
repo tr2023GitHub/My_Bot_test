@@ -84,7 +84,7 @@ def callback(call):
       elif call.data == 'Pycode':
           keyboard = types.InlineKeyboardMarkup(row_width=1)
           url_button = types.InlineKeyboardButton(text="Перейти на GitHub.com",
-                     url="https://github.com/tr2023GitHub/My_pracktik_test/blob/master/telegram_bot_praktik.py")
+                     url="https://github.com/tr2023GitHub/My_Bot_test")
           keyboard.add(url_button)
           bot.send_message(call.message.chat.id, 'Bot пошел на мой Python code bot', parse_mode='html', reply_markup=keyboard)
       elif call.data == 'voices':
